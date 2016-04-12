@@ -10,7 +10,7 @@ function draw() {
    striangle(250, 20, 460, 4);
 }
 
-void striangle(float x,float y,float h,int depth){
+function striangle(float x,float y,float h,int depth){
 	if(depth < 1)
 		return;
 	// draw the triangle
@@ -26,5 +26,7 @@ void striangle(float x,float y,float h,int depth){
     a = sqrt((3 * h * h) / 16); // helpful for working out new x and y
 	
     // YOUR CODE here - 3 recursive calls
-    striangle();	
+    striangle(x,y,half,depth);
+    striangle(x-a,y,half,depth);
+    striangle(x,y-a,half,depth);
 }
