@@ -4,7 +4,7 @@ function setup() {
   stroke(0);
   fill(255);
   noLoop();
-  
+
 }
 
 function draw() {
@@ -16,7 +16,7 @@ function striangle(x,y,h,depth){
 		return;
 	// draw the triangle
     var a = sqrt((3 * h * h) / 4);
-	
+
     // YOUR CODE HERE - draw the triangle using, x, y, h and a
 	triangle(x,y,x+(a/2),h,x+a,y);
     // YOUR CODE HERE
@@ -25,7 +25,7 @@ function striangle(x,y,h,depth){
     var half = a/2;
 	depth--;
     a = sqrt((3 * h * h) / 16); // helpful for working out new x and y
-	
+
     // YOUR CODE here - 3 recursive calls
     striangle(x,y,half,depth);
     striangle(x+a,y,half,depth);
