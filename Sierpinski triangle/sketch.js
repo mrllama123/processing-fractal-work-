@@ -22,12 +22,12 @@ function striangle(x,y,h,depth){
     // YOUR CODE HERE
     // work out the new h
     // reduce the depth
-    var half = a/2;
-	depth--;
+    var half =a-h ;
+	  depth--;
     a = sqrt((3 * h * h) / 16); // helpful for working out new x and y
 
     // YOUR CODE here - 3 recursive calls
     striangle(x,y,half,depth);
-    striangle(x+a,y,half,depth);
-    striangle(x,y+a,half,depth);
+    striangle(x+half,y,half,depth);
+    striangle(x+a,y+a,half,depth);
 }
