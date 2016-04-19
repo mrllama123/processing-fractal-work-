@@ -16,7 +16,6 @@ function drawTriangle(a, b, c) {
     path.strokeColor = 'red';
     path.moveTo(a);
     path.lineTo(b);
-    path.strokeColor = 'blue';
     path.lineTo(c);
     path.lineTo(a);
 }
