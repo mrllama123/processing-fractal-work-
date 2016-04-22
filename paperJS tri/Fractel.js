@@ -13,7 +13,10 @@ function genFractal (a, b, c, depth) {
 
 function drawTriangle(a, b, c) {
     var path = new Path();
+    //change the color each time an triangle in created
     path.strokeColor = 'red';
+    path.strokeColor.hue += Math.random() * (200 - 1) + 1;
+    //create the the triangle
     path.moveTo(a);
     path.lineTo(b);
     path.lineTo(c);

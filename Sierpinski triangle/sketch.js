@@ -18,11 +18,12 @@ function striangle(x,y,h,depth){
     var a = sqrt((3 * h * h) / 4);
 
     // YOUR CODE HERE - draw the triangle using, x, y, h and a
-	triangle(x,y,x+(a/2),h,x+a,y);
+	triangle(x,y,x+(a/2),h,x+a,y;
     // YOUR CODE HERE
     // work out the new h
     // reduce the depth
-    var half =a-h ;
+    var xh = 
+
 	  depth--;
     a = sqrt((3 * h * h) / 16); // helpful for working out new x and y
 
